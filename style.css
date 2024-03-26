@@ -1,0 +1,40 @@
+p {
+  text-indent: 2ch;
+  line-height: 20px;
+  max-width: 50ch;
+  overflow-wrap: break-word;
+}
+body {
+  background: linear-gradient(to left, #f068e5, #dea5d3);
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; /* or any other value */
+}
+
+img {
+  border: 2px solid #1098ad;
+  transition: transform 1s ease;
+}
+
+img:hover {
+  transform: scale(10);
+}
+
+footer {
+  animation: jump 3s infinite alternate ease-in-out;
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  } /* 初始位置为原点 */
+  50% {
+    transform: translateY(-10px);
+  } /* Y轴向上移动20像素 */
+  100% {
+    transform: translateY(0);
+  } /* 返回到原点 */
+}
+
+footer:hover {
+  cursor: pointer;
+}
